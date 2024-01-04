@@ -1,0 +1,211 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(173, 192, 196);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-frame-container {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 15px;
+    /* overflow: hidden; */
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    flex: 1;
+}
+
+.login-label {
+    color: rgb(57, 77, 71);
+    font-size: 34px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.socmed-login-icons {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.socmed-login-icons img {
+    width: 45px;
+    border: 2px solid rgb(227, 228, 227);
+    border-radius: 25px;
+}
+
+.fb-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.google-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.twitter-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 47px;
+    height: 47px;
+    border-radius: 23px;
+    background-color: grey;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.space{
+    margin-right: 15px;
+}
+
+.fb-icon-container:hover .overlay{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.google-icon-container:hover .overlay{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.twitter-icon-container:hover .overlay{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+.form-section {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+}
+
+.credentials-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.credentials-form input {
+    background-color: rgb(235, 235, 235);
+    border:none;
+    width: 290px;
+    padding: 12px 15px;
+    border-radius: 8px;
+}
+
+.email-input {
+    margin-bottom: 20px;
+}
+
+.pwd-input {
+    margin-bottom: 18px;
+}
+
+.use-account-label {
+    font-size: 16px;
+    color: rgb(66, 66, 66);
+}
+
+.forgot-pwd:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login-btn {
+    font-size: 12px;
+    border: none;
+    color: white;
+    background-color: rgb(88, 126, 129);
+    border-radius: 20px;
+    margin-top: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+
+.login-btn:hover {
+    opacity: 0.8;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+    background-color: rgb(88, 126, 129);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.no-account-label {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+.start-journey {
+    color: white;
+    margin-bottom: 60px;
+}
+
+.signup-btn {
+    color: rgb(70, 98, 100);
+    font-size: 14px;
+    border: 1px;
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: box-shadow 0.15s, background-color 0.15s;
+}
+
+.signup-btn:hover {
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+    background-color: white;
+}
+
+.author {
+    color: rgba(255, 255, 255, 0.199);
+    position: absolute;
+    margin-top: 10px;
+    bottom: -26px;
+    right: 12px;
+    font-style: italic;
+    user-select: none;
+}
